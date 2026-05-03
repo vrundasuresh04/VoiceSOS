@@ -1,0 +1,278 @@
+[
+  {
+    "id": "1777661947852",
+    "timestamp": "2026-05-01T18:59:07.852Z",
+    "status": "sent",
+    "triggerPhrase": "Help me!",
+    "confidence": 0,
+    "label": "Normal",
+    "reasons": [],
+    "location": {
+      "lat": 37.7749,
+      "lng": -122.4194,
+      "mapLink": "https://www.google.com/maps?q=37.7749,-122.4194"
+    },
+    "audioUrl": null,
+    "contactName": "DAD",
+    "contactPhone": "+91 2838499232"
+  },
+  {
+    "id": "1777661947867",
+    "timestamp": "2026-05-01T18:59:07.867Z",
+    "status": "sent",
+    "triggerPhrase": "Help me!",
+    "confidence": 0,
+    "label": "Normal",
+    "reasons": [],
+    "location": {
+      "lat": 37.7749,
+      "lng": -122.4194,
+      "mapLink": "https://www.google.com/maps?q=37.7749,-122.4194"
+    },
+    "audioUrl": null,
+    "contactName": "DAD",
+    "contactPhone": "+91 2838499232"
+  },
+  {
+    "id": "1777665218693",
+    "timestamp": "2026-05-01T19:53:38.693Z",
+    "status": "sent",
+    "triggerPhrase": "Manual HELP button",
+    "confidence": 100,
+    "label": "Emergency",
+    "reasons": [
+      "Manual HELP button pressed by user"
+    ],
+    "location": {
+      "lat": null,
+      "lng": null,
+      "mapLink": "Location unavailable"
+    },
+    "audioUrl": "/uploads/1777665218676.webm",
+    "contactName": "MOM",
+    "contactPhone": "916363717035"
+  },
+  {
+    "id": "1777665595058",
+    "timestamp": "2026-05-01T19:59:55.058Z",
+    "status": "sent",
+    "triggerPhrase": "Manual HELP button",
+    "confidence": 100,
+    "label": "Emergency",
+    "reasons": [
+      "Manual HELP button pressed by user"
+    ],
+    "location": {
+      "lat": 12.929725944859232,
+      "lng": 77.6225265853154,
+      "mapLink": "https://www.google.com/maps?q=12.929725944859232,77.6225265853154"
+    },
+    "audioUrl": "/uploads/1777665595039.webm",
+    "contactName": "MOM",
+    "contactPhone": "916363717035"
+  },
+  {
+    "id": "1777667692358",
+    "timestamp": "2026-05-01T20:34:52.358Z",
+    "status": "sent",
+    "triggerPhrase": "Manual HELP button",
+    "confidence": 100,
+    "label": "Emergency",
+    "reasons": [
+      "Manual HELP button pressed by user"
+    ],
+    "location": {
+      "lat": null,
+      "lng": null,
+      "mapLink": "Location unavailable"
+    },
+    "audioUrl": "/uploads/1777667692330.webm",
+    "contactName": "DAD",
+    "contactPhone": "916363717035"
+  },
+  {
+    "id": "1777668045493",
+    "timestamp": "2026-05-01T20:40:45.493Z",
+    "status": "sent",
+    "triggerPhrase": "Manual HELP button",
+    "confidence": 100,
+    "label": "Emergency",
+    "reasons": [
+      "Manual HELP button pressed by user"
+    ],
+    "location": {
+      "lat": 12.929718517202993,
+      "lng": 77.62253120844375,
+      "mapLink": "https://www.google.com/maps?q=12.929718517202993,77.62253120844375"
+    },
+    "audioUrl": "/uploads/1777668045477.webm",
+    "contactName": "DAD",
+    "contactPhone": "916363717035"
+  },
+  {
+    "id": "1777668972757",
+    "timestamp": "2026-05-01T20:56:12.757Z",
+    "status": "sent",
+    "triggerPhrase": "help help",
+    "confidence": 84,
+    "label": "Emergency",
+    "reasons": [
+      "Exact emergency phrase detected: \"help\"",
+      "Distress keywords detected: help (×2)",
+      "Confidence 84% ≥ 70 → Emergency action triggered"
+    ],
+    "location": {
+      "lat": 12.929629825651123,
+      "lng": 77.62252773279872,
+      "mapLink": "https://www.google.com/maps?q=12.929629825651123,77.62252773279872"
+    },
+    "audioUrl": "/uploads/1777668972717.webm",
+    "contactName": "DAD",
+    "contactPhone": "916363717035"
+  },
+  {
+    "id": "1777678431083",
+    "timestamp": "2026-05-01T23:33:51.083Z",
+    "status": "sent",
+    "triggerPhrase": "plis help me",
+    "confidence": 72,
+    "label": "Emergency",
+    "reasons": [
+      "Exact emergency phrase detected: \"help\"",
+      "Distress keywords detected: help",
+      "Confidence 72% ≥ 70 → Emergency action triggered"
+    ],
+    "location": {
+      "lat": 12.929724276778689,
+      "lng": 77.62253342482872,
+      "mapLink": "https://www.google.com/maps?q=12.929724276778689,77.62253342482872"
+    },
+    "audioUrl": "/uploads/1777678431040.webm",
+    "contactName": "DAD",
+    "contactPhone": "916363717035"
+  },
+  {
+    "id": "1777678511561",
+    "timestamp": "2026-05-01T23:35:11.561Z",
+    "status": "sent",
+    "triggerPhrase": "Manual HELP button",
+    "confidence": 100,
+    "label": "Emergency",
+    "reasons": [
+      "Manual HELP button pressed by user"
+    ],
+    "location": {
+      "lat": 12.929592,
+      "lng": 77.622641,
+      "mapLink": "https://www.google.com/maps?q=12.929592,77.622641"
+    },
+    "audioUrl": "/uploads/1777678511542.webm",
+    "contactName": "DAD",
+    "contactPhone": "916363717035"
+  },
+  {
+    "id": "1777678645027",
+    "timestamp": "2026-05-01T23:37:25.027Z",
+    "status": "sent",
+    "triggerPhrase": "help help",
+    "confidence": 84,
+    "label": "Emergency",
+    "reasons": [
+      "Exact emergency phrase detected: \"help\"",
+      "Distress keywords detected: help (×2)",
+      "Confidence 84% ≥ 70 → Emergency action triggered"
+    ],
+    "location": {
+      "lat": 12.929725944859232,
+      "lng": 77.6225265853154,
+      "mapLink": "https://www.google.com/maps?q=12.929725944859232,77.6225265853154"
+    },
+    "audioUrl": "/uploads/1777678645013.webm",
+    "contactName": "DAD",
+    "contactPhone": "916363717035"
+  },
+  {
+    "id": "1777679328441",
+    "timestamp": "2026-05-01T23:48:48.441Z",
+    "status": "sent",
+    "triggerPhrase": "help help",
+    "confidence": 84,
+    "label": "Emergency",
+    "reasons": [
+      "Exact emergency phrase detected: \"help\"",
+      "Distress keywords detected: help (×2)",
+      "Confidence 84% ≥ 70 → Emergency action triggered"
+    ],
+    "location": {
+      "lat": 12.929724327453142,
+      "lng": 77.62252636714445,
+      "mapLink": "https://www.google.com/maps?q=12.929724327453142,77.62252636714445"
+    },
+    "audioUrl": "/uploads/1777679328428.webm",
+    "contactName": "DAD",
+    "contactPhone": "916363717035"
+  },
+  {
+    "id": "1777679773690",
+    "timestamp": "2026-05-01T23:56:13.690Z",
+    "status": "sent",
+    "triggerPhrase": "help help",
+    "confidence": 84,
+    "label": "Emergency",
+    "reasons": [
+      "Exact emergency phrase detected: \"help\"",
+      "Distress keywords detected: help (×2)",
+      "Confidence 84% ≥ 70 → Emergency action triggered"
+    ],
+    "location": {
+      "lat": 12.929470875536481,
+      "lng": 77.6225196888412,
+      "mapLink": "https://www.google.com/maps?q=12.929470875536481,77.6225196888412"
+    },
+    "audioUrl": "/uploads/1777679773647.webm",
+    "contactName": "DAD",
+    "contactPhone": "916363717035"
+  },
+  {
+    "id": "1777681467125",
+    "timestamp": "2026-05-02T00:24:27.125Z",
+    "status": "sent",
+    "triggerPhrase": "help help",
+    "confidence": 84,
+    "label": "Emergency",
+    "reasons": [
+      "Exact emergency phrase detected: \"help\"",
+      "Distress keywords detected: help (×2)",
+      "Confidence 84% ≥ 70 → Emergency action triggered"
+    ],
+    "location": {
+      "lat": 12.92943,
+      "lng": 77.6225075,
+      "mapLink": "https://www.google.com/maps?q=12.92943,77.6225075"
+    },
+    "audioUrl": "/uploads/1777681467095.webm",
+    "contactName": "DAD",
+    "contactPhone": "916363717035"
+  },
+  {
+    "id": "1777814781354",
+    "timestamp": "2026-05-03T13:26:21.354Z",
+    "status": "sent",
+    "triggerPhrase": "Help help help.",
+    "confidence": 96,
+    "label": "Emergency",
+    "reasons": [
+      "Exact emergency phrase detected: \"help\"",
+      "Distress keywords detected: help (×3)",
+      "Confidence 96% ≥ 70 → Emergency action triggered"
+    ],
+    "location": {
+      "lat": 12.918578,
+      "lng": 77.5919645,
+      "mapLink": "https://www.google.com/maps?q=12.918578,77.5919645"
+    },
+    "audioUrl": "/uploads/1777814781328.webm",
+    "contactName": "DAD",
+    "contactPhone": "57835979765"
+  }
+]

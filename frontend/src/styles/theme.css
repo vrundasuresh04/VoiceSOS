@@ -1,0 +1,271 @@
+:root {
+  --bg-gradient: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0a0e27 100%);
+  --card-bg: rgba(255, 255, 255, 0.06);
+  --card-border: rgba(255, 255, 255, 0.12);
+  --text-primary: #ffffff;
+  --text-secondary: #a0a8c0;
+  --text-muted: #6c7493;
+
+  --neon-blue: #00d4ff;
+  --neon-blue-glow: rgba(0, 212, 255, 0.4);
+  --safe-green: #10b981;
+  --warning-amber: #f59e0b;
+  --danger-red: #ef4444;
+  --danger-red-glow: rgba(239, 68, 68, 0.5);
+  --ghost-violet: #8b5cf6;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+  background: #000;
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  background: var(--bg-gradient);
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-container {
+  width: 100%;
+  max-width: 420px;
+  min-height: 100vh;
+  padding: 20px 16px 40px 16px;
+  position: relative;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.glass-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  margin-bottom: 14px;
+}
+
+.btn {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  font-family: inherit;
+}
+.btn:active { transform: scale(0.97); }
+
+.btn-primary {
+  background: var(--neon-blue);
+  color: #000;
+  box-shadow: 0 0 20px var(--neon-blue-glow);
+}
+
+.btn-danger {
+  background: var(--danger-red);
+  color: #fff;
+  box-shadow: 0 0 30px var(--danger-red-glow);
+  font-size: 18px;
+  padding: 22px;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--card-border);
+}
+
+.input {
+  width: 100%;
+  padding: 14px 16px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 15px;
+  font-family: inherit;
+}
+.input:focus {
+  outline: none;
+  border-color: var(--neon-blue);
+  box-shadow: 0 0 0 2px var(--neon-blue-glow);
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+.badge-safe   { background: rgba(16, 185, 129, 0.15); color: var(--safe-green); }
+.badge-warn   { background: rgba(245, 158, 11, 0.15); color: var(--warning-amber); }
+.badge-danger { background: rgba(239, 68, 68, 0.15);  color: var(--danger-red); }
+
+.app-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.app-subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+.meter-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0;
+  position: relative;
+  height: 200px;
+}
+.meter-svg { transform: rotate(-90deg); }
+.meter-track { fill: none; stroke: rgba(255,255,255,0.08); stroke-width: 14; }
+.meter-progress {
+  fill: none;
+  stroke-width: 14;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.6s ease, stroke 0.3s;
+}
+.meter-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+}
+.meter-value {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1;
+}
+.meter-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 6px;
+}
+
+.reasons-list {
+  list-style: none;
+  padding: 0;
+}
+.reasons-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  font-size: 13px;
+  color: var(--text-secondary);
+  display: flex;
+  gap: 10px;
+}
+.reasons-list li:last-child { border-bottom: none; }
+.reasons-list li::before {
+  content: "→";
+  color: var(--neon-blue);
+  font-weight: 700;
+}
+
+.row { display: flex; gap: 10px; }
+.row > * { flex: 1; }
+
+.section-title {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.quick-chip {
+  padding: 8px 12px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--card-border);
+  border-radius: 999px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.quick-chip:hover { background: rgba(0, 212, 255, 0.1); border-color: var(--neon-blue); }
+
+.chips-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+/* ============== VOICE WAVE ANIMATION ============== */
+.voice-wave {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 32px;
+  margin: 8px 0;
+}
+.voice-wave .bar {
+  width: 4px;
+  background: var(--neon-blue);
+  border-radius: 2px;
+  animation: wave 1.1s ease-in-out infinite;
+  box-shadow: 0 0 8px var(--neon-blue-glow);
+}
+.voice-wave .bar:nth-child(1) { animation-delay: 0s;    height: 12px; }
+.voice-wave .bar:nth-child(2) { animation-delay: 0.1s;  height: 22px; }
+.voice-wave .bar:nth-child(3) { animation-delay: 0.2s;  height: 28px; }
+.voice-wave .bar:nth-child(4) { animation-delay: 0.3s;  height: 22px; }
+.voice-wave .bar:nth-child(5) { animation-delay: 0.4s;  height: 12px; }
+
+@keyframes wave {
+  0%, 100% { transform: scaleY(0.4); opacity: 0.6; }
+  50%      { transform: scaleY(1.4); opacity: 1; }
+}
+
+/* ============== PULSING HELP BUTTON ============== */
+.btn-danger.pulse {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 30px var(--danger-red-glow); transform: scale(1); }
+  50%      { box-shadow: 0 0 50px rgba(239, 68, 68, 0.8), 0 0 80px rgba(239, 68, 68, 0.4); transform: scale(1.02); }
+}
+
+/* ============== SCREEN FADE TRANSITION ============== */
+.screen-fade {
+  animation: fadeIn 0.4s ease-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ============== METER GLOW BREATHING ============== */
+.meter-progress {
+  animation: meterBreath 3s ease-in-out infinite;
+}
+@keyframes meterBreath {
+  0%, 100% { filter: drop-shadow(0 0 8px currentColor); }
+  50%      { filter: drop-shadow(0 0 16px currentColor); }
+}
